@@ -1,3 +1,3 @@
-# Pulldown Markdown Notepad for Mac OSX
+# Plunk
 
-A pulldown scratchpad for mac osx that takes markdown and render code well. As well as List Items.
+A pulldown notepad for mac osx that takes markdown and render code well. As well as List Items.
