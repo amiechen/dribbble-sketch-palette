@@ -8,4 +8,5 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow();
   mainWindow.loadURL(path.join('file://', __dirname, 'index.html'));
   setMainMenu();
+  mainWindow.webContents.openDevTools();
 });

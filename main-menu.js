@@ -1,9 +1,6 @@
 const { app, Menu } = require('electron');
 const isWindows = process.platform === 'win32';
 
-module.exports = {
-  setMainMenu
-};
 
 function setMainMenu () {
   const template = [
@@ -36,3 +33,7 @@ function setMainMenu () {
   const menu = Menu.buildFromTemplate(template);
   Menu.setApplicationMenu(menu);
 }
+
+module.exports = {
+  setMainMenu
+};

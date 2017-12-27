@@ -18,5 +18,8 @@
   "homepage": "https://github.com/amiechen/mac-markdown-notepad#readme",
   "dependencies": {
     "electron": "^1.7.10"
+  },
+  "devDependencies": {
+    "devtron": "^1.4.0"
   }
 }
