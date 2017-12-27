@@ -1,0 +1,22 @@
+{
+  "name": "mac-markdown-notepad",
+  "version": "1.0.0",
+  "description": "A pulldown notepad for mac osx that takes markdown and render code well. As well as List Items.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiechen/mac-markdown-notepad.git"
+  },
+  "author": "Amie Chen <amie@hyperyolo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amiechen/mac-markdown-notepad/issues"
+  },
+  "homepage": "https://github.com/amiechen/mac-markdown-notepad#readme",
+  "dependencies": {
+    "electron": "^1.7.10"
+  }
+}
