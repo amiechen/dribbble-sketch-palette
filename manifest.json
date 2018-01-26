@@ -18,9 +18,16 @@
     "scripts": ["background.js"]
   },
 
+  "content_scripts": [
+    {
+      "matches": ["*://*.dribbble.com/shots/*"],
+      "js": ["drib.js"]
+    }
+  ],
+
   "browser_action": {
     "default_icon": "icons/basketball.svg"
   },
   
-  "permissions": ["nativeMessaging", "tabs"]
+  "permissions": ["tabs"]
 }
