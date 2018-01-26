@@ -1,4 +1,6 @@
-var colorChips = document.querySelectorAll('.color-chips > .color a');
+var colorChips = document.querySelector('.color-chips');
+var colors = document.querySelectorAll('.color-chips > .color');
+var btn = document.createElement('div');
 var paletteJson = {
   "compatibleVersion": "1.4",
   "pluginVersion": "1.4",
@@ -21,8 +23,22 @@ function hexToRGBA(hex) {
    };
 }
 
-for (var i=0; i < colorChips.length; i++) {
-  var hex = colorChips[i].getAttribute('title');
+// add class and style to the btn
+btn.classList.add('dribbble-sketch-btn');
+btn.innerText = 'S';
+btn.style.cssText = 'float: left; padding: 4px 6px; font-size: 0.8em; margin-right: 10px; margin-left: -5px; color: white; border-radius: 3px; display:inline-block; cursor:pointer; background-color: #a2a2a2;';
+colorChips.insertBefore(btn, document.querySelector('.color-chips > .color'));
+
+for (var i=0; i < colors.length; i++) {
+  var hex = colors[i].querySelector('a').getAttribute('title');
+  // shorten the width of each color chip
+  colors[i].style.width = '10%';
+
+  // add missing rounded border radius to first color chip
+  colors[0].querySelector('a').style.borderTopLeftRadius = '3px';
+  colors[0].querySelector('a').style.borderBottomLeftRadius = '3px';
+
+  // add each hex to json
   paletteJson.colors.push(hexToRGBA(hex));
 }
 
@@ -31,4 +47,14 @@ msg = {
   paletteJson: paletteJson
 };
 
-browser.runtime.sendMessage(msg);
+document.querySelector('.dribbble-sketch-btn').addEventListener("mouseover", function() {
+  this.style.backgroundColor = '#444444';
+});
+
+document.querySelector('.dribbble-sketch-btn').addEventListener("mouseout", function() {
+  this.style.backgroundColor = '#a2a2a2';
+});
+
+document.querySelector('.dribbble-sketch-btn').addEventListener("click", function() {
+  browser.runtime.sendMessage(msg);
+});

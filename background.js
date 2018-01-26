@@ -6,10 +6,16 @@ function saveJsonToFile (filename, paletteJson) {
     filename: filenameWithExtension,
     url: url
   };
+  var msgFromCS;
 
   browser.downloads.download(options, function(downloadId) {
     if (downloadId) {
-      console.log('saved json file.')
+      var title = browser.i18n.getMessage("notificationTitle");
+      browser.notifications.create({
+        "type": "basic",
+        "title": title,
+        "message": "Your sketch palette is generated"
+      });
     } else {
       var error = browser.runtime.lastError.toString();
       if (error.indexOf('Download canceled by the user') >= 0) {
@@ -23,8 +29,4 @@ function saveJsonToFile (filename, paletteJson) {
 
 browser.runtime.onMessage.addListener(msg => {
   saveJsonToFile(msg.filename, msg.paletteJson);
-});
-
-browser.browserAction.onClicked.addListener(() => {
-  saveJsonToFile(paletteJson);
 });
