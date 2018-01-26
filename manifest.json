@@ -29,5 +29,5 @@
     "default_icon": "icons/basketball.svg"
   },
   
-  "permissions": ["tabs"]
+  "permissions": ["tabs", "downloads"]
 }

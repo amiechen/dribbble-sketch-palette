@@ -4,6 +4,8 @@ var paletteJson = {
   "pluginVersion": "1.4",
   "colors": []
 };
+var filename = document.querySelector('.shot-byline-user a').getAttribute('href').slice(1);
+var msg;
 
 function hexToRGBA(hex) {
    hex = hex.replace('#', '');
@@ -12,9 +14,9 @@ function hexToRGBA(hex) {
    var b = parseInt(hex.length == 3 ? hex.slice(2, 3).repeat(2) : hex.slice(4, 6), 16);
 
    return {
-    "red": r,
-    "green": g,
-    "blue": b,
+    "red": r/255,
+    "green": g/255,
+    "blue": b/255,
     "alpha": 1
    };
 }
@@ -24,4 +26,9 @@ for (var i=0; i < colorChips.length; i++) {
   paletteJson.colors.push(hexToRGBA(hex));
 }
 
-console.log(paletteJson);
+msg = {
+  filename: filename,
+  paletteJson: paletteJson
+};
+
+browser.runtime.sendMessage(msg);
