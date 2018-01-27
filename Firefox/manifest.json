@@ -1,5 +1,5 @@
 {
-  "name": "Dribbble Color Pallette Addon",
+  "name": "Color Palette from Dribbble",
   "description": "Grab Color Palette on Dribbble and generate a json file for importing into Sketch",
   "manifest_version": 2,
   "version": "1.0",
