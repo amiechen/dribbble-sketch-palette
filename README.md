@@ -23,5 +23,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.
 
 ## Acknowledgments
 
-* Chrome version of extension is coming up!
+* This repo contains 2 web extensions, 
 
