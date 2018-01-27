@@ -26,7 +26,7 @@ function hexToRGBA(hex) {
 // add class and style to the btn
 btn.classList.add('dribbble-sketch-btn');
 btn.innerText = 'S';
-btn.style.cssText = 'float: left; padding: 4px 6px; font-size: 0.8em; margin-right: 10px; margin-left: -5px; color: white; border-radius: 3px; display:inline-block; cursor:pointer; background-color: #a2a2a2;';
+btn.style.cssText = 'float: left; padding: 4px 6px; font-size: 0.8em; margin-right: 10px; margin-left: -4px; color: white; border-radius: 3px; display:inline-block; cursor:pointer; background-color: #a2a2a2;';
 colorChips.insertBefore(btn, document.querySelector('.color-chips > .color'));
 
 for (var i=0; i < colors.length; i++) {
