@@ -1,4 +1,3 @@
-![logo](./logo.svg)
 # Dribbble Color Palette Generator
 
 Generate a .sketchpalette file from any dribbble shot's color palette to be loaded in [Sketch-Palette](https://github.com/andrewfiorillo/sketch-palettes) plugin.
