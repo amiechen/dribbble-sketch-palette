@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "version": "1.0",
   "icons": {
-    "48": "icons/basketball.svg"
+    "48": "icons/logo.svg"
   },
 
   "applications": {
