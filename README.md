@@ -4,6 +4,11 @@ Generate a .sketchpalette file from any dribbble shot's color palette to be load
 
 ![Dribbble Color Palette](./example.png)
 
+## Download
+
+Firefox Add-on Store
+Chrome Extension Store
+
 ## Usage
 
 #### Saving Palette
@@ -20,8 +25,3 @@ Install [Sketch-Palette](https://github.com/andrewfiorillo/sketch-palettes)  plu
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE.md) file for details
-
-## Acknowledgments
-
-* This repo contains 2 web extensions, 
-

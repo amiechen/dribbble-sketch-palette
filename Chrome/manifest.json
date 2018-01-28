@@ -14,8 +14,13 @@
   },
   "content_scripts": [
     {
+      "matches": ["*://*.dribbble.com/*"],
+      "js": ["arrive.min.js", "util.js", "preview.js"],
+      "exclude_matches": ["*://*.dribbble.com/shots/*"]
+    },
+    {
       "matches": ["*://*.dribbble.com/shots/*"],
-      "js": ["drib.js"]
+      "js": ["util.js", "drib.js"]
     }
   ],
   "browser_action": {
