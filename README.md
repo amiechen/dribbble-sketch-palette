@@ -6,8 +6,9 @@ Generate a .sketchpalette file from any dribbble shot's color palette to be load
 
 ## Download
 
-Firefox Add-on Store
-Chrome Extension Store
+[Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/dribbble-color-generator/)
+
+[Chrome Extension Store](https://chrome.google.com/webstore/detail/dribbble-color-generator/cineoljoghlkpmnpcjcmbbpedgjbmpac)
 
 ## Usage
 
@@ -20,7 +21,7 @@ Install [Sketch-Palette](https://github.com/andrewfiorillo/sketch-palettes)  plu
 
 ## Authors
 
-🐙 Made by [Amie Chen](https://www.amie-chen.com) - feel free to let me know if you have questions and have suggestions!
+🐙 Made by [Amie Chen](https://www.amie-chen.com)
 
 ## License
 
